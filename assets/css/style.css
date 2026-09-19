@@ -151,11 +151,11 @@ a {
     padding: 70px 35px 100px;
 
     display: grid;
-    grid-template-columns: 260px minmax(0, 680px);
+    grid-template-columns: 260px minmax(0, 735px);
 
-    column-gap: 55px;
+    column-gap: 0;
 
-    align-items: start;
+    align-items: stretch;
 }
 
 
@@ -164,10 +164,6 @@ a {
 .profile-column {
     position: sticky;
     top: 125px;
-
-    padding-right: 35px;
-
-    border-right: 1px solid #d9d7d0;
 }
 
 .profile-image {
@@ -224,7 +220,11 @@ a {
 
 .content-column {
     width: 100%;
-    max-width: 680px;
+    max-width: 735px;
+
+    border-left: 1px solid #d9d7d0;
+
+    padding-left: 55px;
 }
 
 
