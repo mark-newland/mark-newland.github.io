@@ -10,10 +10,14 @@ html {
 
 body {
     margin: 0;
+
     background: #f7f6f2;
     color: #292929;
+
     font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.7;
+
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 a {
@@ -72,16 +76,36 @@ a {
     font-weight: normal;
 }
 
-.main-nav a:hover,
-.main-nav .active {
+.main-nav a:hover {
     color: #245c63;
+}
+
+.main-nav .active {
+    color: #292929;
 }
 
 .nav-chevron {
     font-size: 0.75em;
     margin-left: 3px;
 }
+.main-nav > a,
+.dropdown > a {
+    position: relative;
+}
 
+.main-nav > a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -8px;
+
+    height: 1px;
+
+    background: #245c63;
+}
 
 /* ---------- Dropdown ---------- */
 
@@ -127,10 +151,9 @@ a {
     padding: 70px 35px 100px;
 
     display: grid;
+    grid-template-columns: 260px minmax(0, 680px);
 
-    grid-template-columns: 230px minmax(0, 680px);
-
-    column-gap: 75px;
+    column-gap: 55px;
 
     align-items: start;
 }
@@ -140,8 +163,11 @@ a {
 
 .profile-column {
     position: sticky;
-
     top: 125px;
+
+    padding-right: 35px;
+
+    border-right: 1px solid #d9d7d0;
 }
 
 .profile-image {
@@ -195,6 +221,43 @@ a {
     margin-bottom: 100px;
 }
 
+.hero-levels {
+    margin-top: 28px;
+    margin-bottom: 32px;
+
+    font-size: 0.98rem;
+    color: #666;
+
+    letter-spacing: 0.02em;
+}
+
+.hero-levels span {
+    margin: 0 9px;
+    color: #9a9a9a;
+}
+
+.contact-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border: 1px solid #245c63;
+
+    color: #245c63;
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.contact-button:hover {
+    background: #245c63;
+    color: #f7f6f2;
+}
+
 
 h1 {
     margin: 0 0 25px;
@@ -208,12 +271,12 @@ h1 {
 
 .intro {
     max-width: 600px;
-
     margin: 0;
 
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    line-height: 1.65;
 
-    color: #555;
+    color: #5d5d5d;
 }
 
 /* ---------- Sections ---------- */
@@ -223,9 +286,11 @@ section {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+
     color: #245c63;
-    font-size: 1.65rem;
+
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
