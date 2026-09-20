@@ -164,8 +164,10 @@ a {
 }
 
 .about-text {
-    font-weight: normal;
-    color: #4f4f4f;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.7;
 }
 
 /* ---------- Fixed portrait column ---------- */
