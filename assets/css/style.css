@@ -163,6 +163,10 @@ a {
     align-items: stretch;
 }
 
+.about-text {
+    font-weight: normal;
+    color: #4f4f4f;
+}
 
 /* ---------- Fixed portrait column ---------- */
 
