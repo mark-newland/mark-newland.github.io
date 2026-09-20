@@ -9,8 +9,15 @@ html {
 }
 
 body {
-    font-family: "Source Serif 4", Georgia, serif;
-    font-weight: 300;
+    margin: 0;
+
+    background: #f7f6f2;
+    color: #292929;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 a {
@@ -268,9 +275,13 @@ a {
 }
 
 
-h1, h2 {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-weight: 400;
+h1 {
+    margin: 0 0 25px;
+
+    font-size: 2.65rem;
+    font-weight: normal;
+
+    line-height: 1.15;
 }
 
 
