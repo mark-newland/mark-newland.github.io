@@ -45,9 +45,10 @@ a {
 
     padding: 26px 35px 20px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 735px);
+
     align-items: center;
-    justify-content: space-between;
 }
 
 .site-name {
@@ -64,7 +65,11 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 55px;
+    justify-content: flex-start;
+
+    gap: 48px;
+
+    padding-left: 55px;
 }
 
 .main-nav a {
